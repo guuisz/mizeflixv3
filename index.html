@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MizeFlix</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+</head>
+
+
+<body class='bgbody'>
+    <header class="header">
+        <p>MizeFlix</p>
+        <ul>
+            <li>
+                <a href="animes.html">Animes</a>
+            </li>
+            <li>
+                <a href="mangas.html">Mangas</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="outdoor">
+        <div class="outdoor1">
+            <div class="outdoorcontent">
+                <img src="imgs/frierenlogo.png" alt="">
+                <p>Após uma missão de 10 anos ao lado do herói Himmel e seu grupo, a poderosa maga Frieren derrotou o
+                    Rei Demônio e trouxe paz ao reino. Como uma elfa, Frieren tem uma vida de mais de mil anos pela
+                    frente. Ela promete retornar para seus amigos e, assim, parte em uma jornada solitária...</p>
+                <button>COMEÇAR A ASSISTIR E1</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="animeRecomendacao">
+        <h1>Recomendação</h1>
+    </div>
+
+    <div class="animeList">
+        <div class="animeListContainer n1" onmouseenter="infoAnime(0)" onmouseleave="leaveAnime(0)">
+            <div class="animeHidden n1">
+                <p class="tituloHidden">Ping Pong the Animation</p>
+                <p class="notaHidden">Nota: 4.8</p>
+                <p class="temporadaHidden">1 Temporada</p>
+                <p class="episodiosHidden">11 Episódios</p>
+                <p class="descricaoHidden">Baseado no mangá de Taiyou Matsumoto, Ping Pong the Animation fará parte da
+                    programação do popular
+                    bloco da Fuji TV, o noitaminA. A história é sobre o estudante do ensino médio Yukata Hoshino,
+                    apelidado de Peco...</p>
+            </div>
+            <div class="animeVisible animeVisible">
+                <img src="imgs/anime1.png" alt="" class="imageList">
+                <p class="pVisible">Ping Pong the Animation</p>
+                <p class="pVisible">Dub | Leg</p>
+            </div>
+        </div>
+        <div class="animeListContainer" onmouseenter="infoAnime(1)" onmouseleave="leaveAnime(1)">
+            <div class="animeHidden">
+                <p>Kuroko's Basketball</p>
+                <p>Nota: 4.8</p>
+                <p>5 Temporadas</p>
+                <p>83 Episódios</p>
+                <p>O clube de basquete do Ginásio Teiko venceu três campeonatos seguidos com um grupo de cinco jogadores
+                    conhecidos como "A Geração Milagrosa". No entanto, além desses cinco havia um outro jogador...</p>
+            </div>
+            <div class="animeVisible">
+                <img src="imgs/anime2.png" alt="" class="imageList">
+                <p class="pVisible">Kuroko's Basketball</p>
+                <p class="pVisible">Legendado</p>
+            </div>
+        </div>
+        <div class="animeListContainer" onmouseenter="infoAnime(2)" onmouseleave="leaveAnime(2)">
+            <div class="animeHidden">
+                <p>Classroom of the Elite</p>
+                <p>Nota: 4.8</p>
+                <p>3 Temporadas</p>
+                <p>38 Episódios</p>
+                <p>Kiyotaka Ayanokouji acaba de se matricular no Colégio Tokyo Koudo Ikusei, onde dizem que 100% dos
+                    seus alunos entram na faculdade ou arranjam um bom emprego. Infelizmente, ele vai parar na sala 1-D,
+                    onde ficam todos os...</p>
+            </div>
+            <div class="animeVisible">
+                <img src="imgs/anime3.png" alt="" class="imageList">
+                <p class="pVisible">Ping Pong the Animation</p>
+                <p class="pVisible">Dub | Leg</p>
+            </div>
+        </div>
+        <div class="animeListContainer" onmouseenter="infoAnime(3)" onmouseleave="leaveAnime(3)">
+            <div class="animeHidden">
+                <p>The Ryuo's Work is Never Done!</p>
+                <p>Nota: 4.4</p>
+                <p>1 Temporada</p>
+                <p>12 Episódios</p>
+                <p>O protagonista abre a porta e se depara com uma sádica...
+                    "Eu vim ser sua aprendiz, como você prometeu!"
+                    Com apenas 16 anos, Yaichi Kuzuryu detém um dos maiores rankings do mundo do shogi: "Ryuo"
+                    Quem bateu à sua porta...</p>
+            </div>
+            <div class="animeVisible">
+                <img src="imgs/anime4.png" alt="" class="imageList">
+                <p class="pVisible">The Ryuo's Work is Never Done!</p>
+                <p class="pVisible">Legendado</p>
+            </div>
+        </div>
+        <div class="animeListContainer" onmouseenter="infoAnime(4)" onmouseleave="leaveAnime(4)">
+            <div class="animeHidden">
+                <p>UMAYON</p>
+                <p>Nota: 4.2</p>
+                <p>1 Temporada</p>
+                <p>12 Episódios</p>
+                <p>As garotas-cavalo estão de volta para te encantar com este anime especial! Umayon, a série de
+                    quadrinhos publicada no app Cycomics da Cygames, ganha vida neste anime carismático e vibrante!
+                    Nesta escola...</p>
+            </div>
+            <div class="animeVisible">
+                <img src="imgs/anime5.png" alt="" class="imageList">
+                <p class="pVisible">UMAYON</p>
+                <p class="pVisible">Legendado</p>
+            </div>
+        </div>
+        <div class="animeListContainer" onmouseenter="infoAnime(5)" onmouseleave="leaveAnime(5)">
+            <div class="animeHidden">
+                <p>ROOM CAMP</p>
+                <p>Nota: 4.7</p>
+                <p>1 Temporada</p>
+                <p>13 Episódios</p>
+                <p>No interior de Yamanashi, tem um colégio chamado Colégio Motosu. Entre no prédio e você encontrará um
+                    clube de atividades ao ar livre bastante despreocupado, que usa um canto de uma das salas de...</p>
+            </div>
+            <div class="animeVisible">
+                <img src="imgs/anime6.png" alt="" class="imageList">
+                <p class="pVisible">The Ryuo's Work is Never Done!</p>
+                <p class="pVisible">Legendado</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="indexscript.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+</body>
+
+</html>

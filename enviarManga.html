@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MizeFlix</title>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="enviarManga.css">
+</head>
+
+
+<body class='bgbody'>
+    <div class="container">
+        <div class="form1">
+            <p>Enviar Manga</p>
+            <form id="infoForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="name">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+                <label for="name">Imagem BG:</label>
+                <input type="text" id="imagemBG" name="imagemBG" required>
+                <label for="name">ImagemURL:</label>
+                <input type="text" id="imagemURL" name="imagemURL" required>
+                <label for="name">Descrição Completa:</label>
+                <input type="text" id="descricaoCompleta" name="descricaoCompleta" required>
+                <label for="name">Nota:</label>
+                <input type="text" id="nota" name="nota" required>
+                <button type="button" onclick="addMangaToFirestore()">Enviar</button>
+            </form>
+        </div>
+        <div class="form2">
+            <p>Enviar Volume</p>
+            <form id="infoForm">
+                <label for="nome">Nome do Manga:</label>
+                <input type="text" id="nomeManga" name="nomeManga" required>
+                <label for="name">ID do Volume:</label>
+                <input type="text" id="idVolume" name="idVolume" required>
+                <label for="name">Numero do Volume:</label>
+                <input type="text" id="numeroVolume" name="numeroVolume" required>
+                <label for="name">Titulo do Volume:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                <label for="name">Descrição do Volume:</label>
+                <input type="text" id="descricaoVolume" name="descricaoVolume" required>
+                <label for="name">Drive Link do Volume:</label>
+                <input type="text" id="driveLink" name="driveLink" required>
+                <label for="name">ImagemURL do Volume:</label>
+                <input type="text" id="imagemURLVL" name="imagemURLVL" required>
+                <button type="button" onclick="addVolumeToFirestore()">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="enviarManga.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+</body>
+
+</html>

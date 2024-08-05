@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MizeFlix</title>
+    <link rel="stylesheet" href="animesstyle.css">
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <p>MizeFlix</p>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="mangas.html">Mangas</a>
+            </li>
+
+        </ul>
+    </header>
+
+    <div class="corpo-container">
+        <h1>Ver Todos os Animes</h1>
+        <div class="lista-letras">
+            <p onclick="geraTelaInicial()">#</p>
+            <p onclick="alteraAnimes('a',1)">a</p>
+            <p onclick="alteraAnimes('b',2)">b</p>
+            <p onclick="alteraAnimes('c',3)">c</p>
+            <p onclick="alteraAnimes('d',4)">d</p>
+            <p onclick="alteraAnimes('e',5)">e</p>
+            <p onclick="alteraAnimes('f',6)">f</p>
+            <p onclick="alteraAnimes('g',7)">g</p>
+            <p onclick="alteraAnimes('h',8)">h</p>
+            <p onclick="alteraAnimes('i',9)">i</p>
+            <p onclick="alteraAnimes('j',10)">j</p>
+            <p onclick="alteraAnimes('k',11)">k</p>
+            <p onclick="alteraAnimes('l',12)">l</p>
+            <p onclick="alteraAnimes('m',13)">m</p>
+            <p onclick="alteraAnimes('n',14)">n</p>
+            <p onclick="alteraAnimes('o',15)">o</p>
+            <p onclick="alteraAnimes('p',16)">p</p>
+            <p onclick="alteraAnimes('q',17)">q</p>
+            <p onclick="alteraAnimes('r',18)">r</p>
+            <p onclick="alteraAnimes('s',19)">s</p>
+            <p onclick="alteraAnimes('t',20)">t</p>
+            <p onclick="alteraAnimes('u',21)">u</p>
+            <p onclick="alteraAnimes('v',22)">v</p>
+            <p onclick="alteraAnimes('w',23)">w</p>
+            <p onclick="alteraAnimes('x',24)">x</p>
+            <p onclick="alteraAnimes('y',25)">y</p>
+            <p onclick="alteraAnimes('z',26)">z</p>
+        </div>
+        <h2>#</h2>
+            <div class="line"></div>
+            <div class="animes-lista">
+            </div>
+    </div>
+
+</body>
+<script src="animesscript.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MizeFlix</title>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="enviarDB.css">
+</head>
+
+
+<body class='bgbody'>
+    <div class="container">
+        <div class="form1">
+            <p>Enviar Anime</p>
+            <form id="infoForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="name">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+                <label for="name">Legenda:</label>
+                <input type="text" id="legenda" name="legenda" required>
+                <label for="name">ImagemURL:</label>
+                <input type="text" id="imagemURL" name="imagemURL" required>
+                <label for="name">Descrição Completa:</label>
+                <input type="text" id="descricaoCompleta" name="descricaoCompleta" required>
+                <label for="name">Nota:</label>
+                <input type="text" id="nota" name="nota" required>
+                <button type="button" onclick="addAnimeToFirestore()">Enviar</button>
+            </form>
+        </div>
+        <div class="form2">
+            <p>Enviar Episódio</p>
+            <form id="infoForm">
+                <label for="nome">Nome do Anime:</label>
+                <input type="text" id="nomeAnime" name="nomeAnime" required>
+                <label for="name">ID do Episódio:</label>
+                <input type="text" id="idEpisodio" name="idEpisodio" required>
+                <label for="name">Numero do Episódio:</label>
+                <input type="text" id="numeroEpisodio" name="numeroEpisodio" required>
+                <label for="name">Titulo do Episódio:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                <label for="name">Descrição do Episódio:</label>
+                <input type="text" id="descricaoEpisodio" name="descricaoEpisodio" required>
+                <label for="name">Drive Link do Episódio:</label>
+                <input type="text" id="driveLink" name="driveLink" required>
+                <label for="name">ImagemURL do Episódio:</label>
+                <input type="text" id="imagemURLEP" name="imagemURLEP" required>
+                <button type="button" onclick="addEpisodioToFirestore()">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="enviarDB.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 100vw;
+    height: 8vh;
+    background-color: black;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+.header p {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 3em;
+}
+
+.header ul {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.header li {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover {
+    color: tomato;
+}
+
+.header li:nth-child(1){
+    margin-left: 0.8em;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 0.68em;
+    }
+}
+
+.outdoor {
+    width: 100vw;
+    height: 75vh;
+    background-color: black;
+    display: grid;
+    background-image: url('imgs/frierenwallpaper.jpg');
+    background-size: cover;
+    grid-template-columns: 1fr 2.5fr;
+}
+
+.outdoor1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    display: grid;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+.outdoor img {
+    max-width: 20vw;
+}
+
+.outdoor1 button {
+    font-size: 0.9em;
+    background-color: #7882A7;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    height: 5vh;
+    width: 10vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .outdoor {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .outdoor1 {
+        line-height: 1.5em;
+        display: grid;
+        align-items: center;
+        padding-left: 3vw;
+    }
+
+    .outdoor img {
+        max-width: 50vw;
+    }
+
+    .outdoor1 button {
+        font-size: 0.9em;
+        background-color: #7882A7;
+        color: black;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.5em;
+        height: 5vh;
+        width: 50vw;
+    }
+
+}
+
+.animeRecomendacao {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.animeRecomendacao h1{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    padding-left: 3vw;
+    color: white;
+}
+
+.animeList {
+    width: 96vw;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.15vw;
+    padding-left: 3vw;
+    color: white;
+}
+
+.animeListContainer {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    margin: 0;
+    height: 50vh;
+    font-size: 1em;
+    opacity: 100%;
+}
+
+.imageList {
+    width: 13.5vw;
+    height: 40vh;
+}
+
+.animeListContainer :nth-child(2) {
+    font-size: 1em;
+    align-self: start;
+    margin: 0;
+}
+
+.animeListContainer :nth-child(3) {
+    font-size: 1em;
+    margin: 0;
+}
+
+.animeHidden {
+    position: absolute;
+    width: 13.5vw;
+    height: 40vh;
+    word-wrap: break-word;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3em;
+    font-size: 1em;
+    visibility: hidden;
+}
+
+.animeHidden p {
+    margin: 0;
+    padding-left: 0.5em;
+}
+
+.animeHidden :nth-child(1) {
+    margin-bottom: 0.5em;
+}
+
+.animeHidden :nth-child(2),.animeHidden :nth-child(3),.animeHidden :nth-child(4) {
+    color: gray;
+}
+
+.animeHidden :nth-child(4) {
+    margin-bottom: 0.4em;
+}
+
+.animeVisible {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .animeList {
+        width: 96vw;
+        display: grid; 
+        grid-template-columns: 1fr 1fr ;
+        gap: 0.15vw;
+        padding-left: 3vw;
+        color: white;
+    }
+
+    .imageList {
+        width: 45vw;
+        height: 40vh;
+    }
+
+    .animeListContainer {
+        font-family: 'Lato', sans-serif;
+        line-height: 1.5em;
+        font-size: 0.9em;
+    }
+
+    .animeHidden {
+        width: 45vw;
+    }
+
+}
+
+
+.botaoUm {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 100vh;
+    left: 96vw;
+    font-size: 3em;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.botaoDois {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 100vh;
+    left: 0.5vw;
+    font-size: 3em;
+    color: white;
+    background: none;
+    border: none;
+}

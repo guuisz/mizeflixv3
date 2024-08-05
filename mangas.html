@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MizeFlix</title>
+    <link rel="stylesheet" href="mangasstyle.css">
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <p>MizeFlix</p>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="animes.html">Animes</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="corpo-container">
+        <h1>Ver Todos os Mangas</h1>
+        <div class="lista-letras">
+            <p onclick="geraTelaInicial()">#</p>
+            <p onclick="alteraMangas('a',1)">a</p>
+            <p onclick="alteraMangas('b',2)">b</p>
+            <p onclick="alteraMangas('c',3)">c</p>
+            <p onclick="alteraMangas('d',4)">d</p>
+            <p onclick="alteraMangas('e',5)">e</p>
+            <p onclick="alteraMangas('f',6)">f</p>
+            <p onclick="alteraMangas('g',7)">g</p>
+            <p onclick="alteraMangas('h',8)">h</p>
+            <p onclick="alteraMangas('i',9)">i</p>
+            <p onclick="alteraMangas('j',10)">j</p>
+            <p onclick="alteraMangas('k',11)">k</p>
+            <p onclick="alteraMangas('l',12)">l</p>
+            <p onclick="alteraMangas('m',13)">m</p>
+            <p onclick="alteraMangas('n',14)">n</p>
+            <p onclick="alteraMangas('o',15)">o</p>
+            <p onclick="alteraMangas('p',16)">p</p>
+            <p onclick="alteraMangas('q',17)">q</p>
+            <p onclick="alteraMangas('r',18)">r</p>
+            <p onclick="alteraMangas('s',19)">s</p>
+            <p onclick="alteraMangas('t',20)">t</p>
+            <p onclick="alteraMangas('u',21)">u</p>
+            <p onclick="alteraMangas('v',22)">v</p>
+            <p onclick="alteraMangas('w',23)">w</p>
+            <p onclick="alteraMangas('x',24)">x</p>
+            <p onclick="alteraMangas('y',25)">y</p>
+            <p onclick="alteraMangas('z',26)">z</p>
+        </div>
+        <h2>#</h2>
+            <div class="line"></div>
+            <div class="mangas-lista">
+            </div>
+    </div>
+
+</body>
+<script src="mangasscript.js"></script>
+</html>

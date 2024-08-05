@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 97vw;
+    height: 8vh;
+    background-color: black;
+    align-items: center;
+    padding-left: 3em;
+}
+
+.header p {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 3em;
+}
+
+.header ul {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+.header li {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.header a:hover {
+    color: tomato;
+}
+
+.header li:nth-child(1){
+    margin-left: 0.8em;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 0.68em;
+        padding-left: 0;
+    }
+}
+
+.corpo-container {
+    width: 70vw;
+    height: 50vh;
+    margin-top: 5vh;
+    margin-left: 15vw;
+}
+
+.corpo-container h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    color: white;
+}
+
+.corpo-container h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .corpo-container {
+        height: 50vh;
+        width: 100vw;
+        margin-top: 5vh;
+        margin-left: 0vw;
+    }
+
+    .corpo-container h1 {
+        font-family: 'Lato', sans-serif;
+        font-size: 2em;
+        color: white;
+    }
+}
+
+.lista-letras {
+    display: inline-flex;
+    width: 60vw;
+    margin-left: 5vw;
+    color: #A0A0A0;
+}
+
+.lista-letras p {
+    font-size: 1em;
+    line-height: 1.1em;
+    margin-left: 1.9vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.lista-letras :nth-child(1) {
+    margin-left: 0;
+}
+
+.lista-letras :hover {
+    cursor: pointer;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .lista-letras {
+        display: inline-flex;
+        width: 100vw;
+        margin-left: 0px;
+        color: #A0A0A0;
+    }
+    
+    .lista-letras p {
+        font-size: 0.9em;
+        line-height: 1.1em;
+        margin-left: 1.9vw;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .lista-letras :nth-child(1) {
+        margin-left: 0;
+    }
+    
+    .lista-letras :hover {
+        cursor: pointer;
+        color: white;
+    }
+}
+
+.line {
+    width: 70vw;
+    height: 0.2vh;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .line {
+        width: 100vw;
+    }
+}
+
+.manga {
+    margin-top: 1vh;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.manga :hover {
+    cursor: pointer;
+    background-color: #141519;
+}
+
+.manga-image {
+    height: 39vh;
+    width: 12.8vw;
+}
+.manga-image img {
+    height: 39vh;
+    max-width: 12.8vw;
+}
+
+.manga-descricao {
+    display: grid;
+    height: 16vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-right: 5em;
+    padding-left: 1em;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: #A0A0A0;
+    height: 40vh;
+    width: 51vw;
+}
+
+.manga-descricao :nth-child(1) {
+    align-self: end;
+}
+
+.manga-descricao :nth-child(3) {
+    align-self: start;
+}
+
+.manga-descricao p {
+    margin: 0;
+}
+
+.manga-descricao :nth-child(1) {
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .manga {
+        margin-top: 1vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    .manga-image {
+        height: 40vh;
+        width: 40vw;
+    }
+    .manga-image img {
+        height: 40vh;
+        max-width: 40vw;
+    }
+
+    .manga-descricao {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-right: 5em;
+        padding-left: 1em;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.7em;
+        color: #A0A0A0;
+        height: 40vh;
+        width: 50vw;
+    }
+
+}
